@@ -47,7 +47,7 @@ jobs:
           echo ${{env.d1d2}}
           dir ${{env.d1d2}}
           dir d1\d2
-          dir ${{github.workspace}}d1\d2
+          dir ${{github.workspace}}\\d1\d2
 
       # upload-artifact
       - name: upload-1
