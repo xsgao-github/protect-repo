@@ -16,7 +16,6 @@ on:
   
 env:
   d1d2_1: "${{github.workspace}}\\d1\\d2"
-  d1d2_2: "${{github.workspace}}\d1\d2"
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
