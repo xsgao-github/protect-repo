@@ -15,7 +15,7 @@ on:
   workflow_dispatch:
   
 env:
-  d1d2_1: "${{github.workspace}}\\d1\\d2"
+  d1d2: "${{github.workspace}}\\d1\\d2"
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -44,10 +44,8 @@ jobs:
 
       - name: echo and dir d1d2_?
         run: |
-          echo ${{env.d1d2_1}}
-          echo ${{env.d1d2_2}}
-          dir ${{env.d1d2_1}}
-          dir ${{env.d1d2_2}}
+          echo ${{env.d1d2}}
+          dir ${{env.d1d2}}
           dir d1\d2
           dir ${{github.workspace}}d1\d2
 
